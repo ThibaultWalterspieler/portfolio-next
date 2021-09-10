@@ -1,0 +1,6 @@
+.global-wrapper {
+  padding: 4rem;
+  background-color: map-get($colors, 'pureDark');
+  width: 100vw;
+  height: 100vh;
+}

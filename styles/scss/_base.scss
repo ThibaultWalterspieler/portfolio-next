@@ -1,0 +1,25 @@
+html,
+body {
+  font-family: $font-family;
+  font-size: $font-size--base;
+  line-height: $line-height--base;
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: fixed;
+}
+
+.base {
+  @include themed() {
+    background: t($bg);
+    color: t($text);
+  }
+  transition: background 0.5 ease, color 0.5 ease;
+  height: 100%;
+}

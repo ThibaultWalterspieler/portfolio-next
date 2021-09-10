@@ -1,0 +1,24 @@
+// Breakpoints size
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  2xl: 1536px,
+);
+
+/**
+  * Media queries
+  * example : @include respond-to(x) {}
+  */
+@mixin respond-to($size) {
+  $size: map-get($breakpoints, $size);
+
+  @if $size {
+    $breakpoint: if(type-of($size) == 'string', unquote($size), inspect($size));
+
+    @media only screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}

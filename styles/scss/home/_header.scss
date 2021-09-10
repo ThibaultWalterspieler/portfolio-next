@@ -1,0 +1,19 @@
+.fullname {
+  display: flex;
+  flex-direction: column;
+
+  @extend %title-text;
+  color: map-get($colors, 'pureWhite');
+  margin-bottom: 2rem;
+
+  .firstname {
+    margin-bottom: 5rem;
+  }
+  .lastname {
+  }
+}
+
+.job {
+  @extend %subtitle-text;
+  color: map-get($colors, 'pureWhite');
+}

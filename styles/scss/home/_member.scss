@@ -1,0 +1,8 @@
+.job-wrapper {
+  color: map-get($colors, 'pureWhite');
+  @extend %section-text;
+
+  .company-name {
+    font-weight: $font-weight--bold;
+  }
+}
