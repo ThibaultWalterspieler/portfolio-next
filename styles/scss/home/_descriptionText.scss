@@ -1,0 +1,7 @@
+.description-wrapper {
+  & > p {
+    color: map-get($colors, 'pureWhite');
+
+    @extend %normal-text;
+  }
+}

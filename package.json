@@ -11,12 +11,20 @@
     "eslint": "tsc --noEmit && eslint src/**/*.ts{,x}"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.11",
+    "axios": "^0.21.4",
+    "contentful": "^8.5.7",
+    "dompurify": "^2.3.1",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.5.3",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.39.0"
   },
   "devDependencies": {
+    "@graphcms/management": "^1.1.2",
+    "@types/dompurify": "^2.2.3",
     "@types/react": "17.0.20",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
@@ -26,6 +34,7 @@
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jam3": "^0.2.3",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.21.5",
