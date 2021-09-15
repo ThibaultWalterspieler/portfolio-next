@@ -1,13 +1,17 @@
 import { FC } from 'react';
 
-const Header: FC = () => {
+const Header: FC<{ firstname: string; lastname: string; job: string }> = ({
+  job,
+  firstname,
+  lastname,
+}) => {
   return (
     <header>
       <h1 className='fullname'>
-        <span className='firstname'>Thibault</span>
-        <span className='lastname'>Walterspieler</span>
+        <span className='firstname'>{firstname}</span>
+        <span className='lastname'>{lastname}</span>
       </h1>
-      <h2 className='job'>Fullstack dev in Paris</h2>
+      <h2 className='job'>{job} in Paris</h2>
     </header>
   );
 };

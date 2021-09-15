@@ -1,41 +1,28 @@
 import { FC } from 'react';
-import Link from 'next/link';
+import { Company } from '../../interface/company/company.interface';
 
-const companies = [
-  {
-    name: 'WeAreStudio99',
-    link: 'https://github.com/WeAreStudio99/',
-    color: '#FFD576',
-  },
-  {
-    name: 'Blacksmith',
-    link: 'https://www.blacksmith.studio/',
-    color: '#ADB0FF',
-  },
-];
-
-const Member: FC = () => {
+const Member: FC<{ companies: Company[] }> = ({ companies }) => {
   return (
     <div className='job-wrapper'>
       <h3>
         Member of
         <br />
       </h3>
-      {companies.map((company, idx) => (
-        <>
-          <a
-            href={company.link}
-            key={`${company.name}-${idx}`}
-            rel='noreferrer'
-            target='_blank'
-          >
-            <span style={{ color: company.color }} className='company-name'>
-              {company.name}
-            </span>
-          </a>
-          {idx < companies.length - 1 && ' && '}
-        </>
-      ))}
+      <div className='memberOf-wrapper'>
+        {companies.map((company, idx) => (
+          <div key={`${company.name}-${idx}`}>
+            <a href={company.url} rel='noreferrer' target='_blank'>
+              <span
+                style={{ color: company.textColor.hex }}
+                className='company-name'
+              >
+                {company.name}
+              </span>
+            </a>
+            {idx < companies.length - 1 && ' && '}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

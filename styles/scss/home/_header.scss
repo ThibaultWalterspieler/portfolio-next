@@ -5,15 +5,28 @@
   @extend %title-text;
   color: map-get($colors, 'pureWhite');
   margin-bottom: 2rem;
+  @include respond-to(sm) {
+    font-size: 5rem;
+    line-height: 0.5;
+  }
 
-  .firstname {
+  & > .firstname {
     margin-bottom: 5rem;
+    @include respond-to(sm) {
+      margin-bottom: 2.5rem;
+    }
   }
-  .lastname {
-  }
+  //   .lastname {
+  //   }
 }
 
 .job {
   @extend %subtitle-text;
   color: map-get($colors, 'pureWhite');
+
+  @include respond-to(sm) {
+    margin: 4rem 0 2.5rem;
+    font-size: 3.5rem;
+    line-height: 0.5;
+  }
 }
