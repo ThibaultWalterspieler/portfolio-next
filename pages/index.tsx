@@ -13,6 +13,7 @@ import {
   StackUserItem,
 } from '../interface/stackoverflow/stackoverflow.interface';
 import githubClient from '../utils/github-client';
+import SEO from '../components/SEO/SEO';
 
 const Home: NextPage<{
   page: { data: { personal: Personal } };
@@ -33,6 +34,15 @@ const Home: NextPage<{
 
   return (
     <Layout>
+      <SEO
+        title={
+          personal?.seoTitle || 'Thibault Walterspieler - Fullstack developer'
+        }
+        description={
+          personal?.seoDescription ||
+          'I’m Thibault Walterspieler a Fullstack developer'
+        }
+      />
       <div className='global-wrapper'>
         {personal && (
           <>
@@ -65,6 +75,8 @@ export async function getStaticProps() {
           firstname
           lastname
           job
+          seoTitle
+          seoDescription
           description {
             html
           }

@@ -11,4 +11,6 @@ export interface Personal {
   memberOf: Company[];
   workedFor: Company[];
   social: Social[];
+  seoTitle: string;
+  seoDescription: string;
 }
