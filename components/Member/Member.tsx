@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Link from 'next/link';
+import SEO from '../SEO/SEO';
 
 const companies = [
   {
@@ -16,27 +16,30 @@ const companies = [
 
 const Member: FC = () => {
   return (
-    <div className='job-wrapper'>
-      <h3>
-        Member of
-        <br />
-      </h3>
-      {companies.map((company, idx) => (
-        <>
-          <a
-            href={company.link}
-            key={`${company.name}-${idx}`}
-            rel='noreferrer'
-            target='_blank'
-          >
-            <span style={{ color: company.color }} className='company-name'>
-              {company.name}
-            </span>
-          </a>
-          {idx < companies.length - 1 && ' && '}
-        </>
-      ))}
-    </div>
+    <>
+      <SEO title={'Thibault Walterspieler - Fullstack dev'} description={''} />
+      <div className='job-wrapper'>
+        <h3>
+          Member of
+          <br />
+        </h3>
+        {companies.map((company, idx) => (
+          <>
+            <a
+              href={company.link}
+              key={`${company.name}-${idx}`}
+              rel='noreferrer'
+              target='_blank'
+            >
+              <span style={{ color: company.color }} className='company-name'>
+                {company.name}
+              </span>
+            </a>
+            {idx < companies.length - 1 && ' && '}
+          </>
+        ))}
+      </div>
+    </>
   );
 };
 
