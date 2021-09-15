@@ -1,8 +1,20 @@
 .job-wrapper {
+  margin: 3rem 0;
   color: map-get($colors, 'pureWhite');
   @extend %section-text;
 
-  .company-name {
-    font-weight: $font-weight--bold;
+  @include respond-to(sm) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  & > .memberOf-wrapper {
+    & a > .company-name {
+      font-weight: $font-weight--bold;
+    }
+    display: flex;
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
   }
 }

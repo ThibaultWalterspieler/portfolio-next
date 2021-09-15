@@ -17,7 +17,7 @@ $breakpoints: (
   @if $size {
     $breakpoint: if(type-of($size) == 'string', unquote($size), inspect($size));
 
-    @media only screen and (min-width: $breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
       @content;
     }
   }
