@@ -6,8 +6,8 @@
   color: map-get($colors, 'pureWhite');
   margin-bottom: 2rem;
   @include respond-to(sm) {
-    font-size: 5rem;
-    line-height: 0.5;
+    font-size: 20rem;
+    line-height: 20rem;
   }
 
   & > .firstname {
@@ -25,8 +25,8 @@
   color: map-get($colors, 'pureWhite');
 
   @include respond-to(sm) {
-    margin: 4rem 0 2.5rem;
-    font-size: 3.5rem;
-    line-height: 0.5;
+    margin: 8rem 0 2.5rem;
+    font-size: 14rem;
+    line-height: 1;
   }
 }

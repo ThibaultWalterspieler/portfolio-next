@@ -7,7 +7,14 @@ const SVGRender: FC<{
   width?: number | string;
   height?: number | string;
 }> = ({ url, color, width, height }) => {
-  return <svg data-src={url} fill={color} width={width} height={height} />;
+  return (
+    <svg
+      data-src={url}
+      fill={color}
+      width={width || '100%'}
+      height={height || '100%'}
+    />
+  );
 };
 
 export default SVGRender;
