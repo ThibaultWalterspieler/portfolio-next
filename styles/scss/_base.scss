@@ -4,6 +4,9 @@ body {
   font-size: $font-size--base;
   line-height: $line-height--base;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
 }
 
 html {
@@ -11,15 +14,5 @@ html {
 }
 
 body {
-  min-height: 100%;
-  position: fixed;
-}
-
-.base {
-  @include themed() {
-    background: t($bg);
-    color: t($text);
-  }
-  transition: background 0.5 ease, color 0.5 ease;
-  height: 100%;
+  background-color: map-get($colors, 'pureDark');
 }

@@ -1,0 +1,30 @@
+.worked-for__wrapper {
+  margin-top: 5rem;
+  & > h3 {
+    @extend %section-title;
+    color: map-get($colors, 'pureWhite');
+    margin-bottom: 2.5rem;
+  }
+
+  & > .logos__wrapper {
+    display: flex;
+
+    & > .logo__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      width: fit-content;
+      margin: 0 2.5rem 0 0;
+
+      & > a > svg {
+        transition: all 0.2s ease-in-out;
+        height: 5rem;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

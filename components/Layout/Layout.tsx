@@ -44,7 +44,7 @@ const Layout: FC = ({ children }) => {
       <Head>
         <FontLinks />
       </Head>
-      <main>{children}</main>
+      {children}
     </>
   );
 };
