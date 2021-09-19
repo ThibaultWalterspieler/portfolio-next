@@ -14,6 +14,7 @@ import {
 } from '../interface/stackoverflow/stackoverflow.interface';
 import githubClient from '../utils/github-client';
 import SEO from '../components/SEO/SEO';
+import WorkedFor from '../components/WorkedFor/WorkedFor';
 
 const Home: NextPage<{
   page: { data: { personal: Personal } };
@@ -60,6 +61,7 @@ const Home: NextPage<{
                   githubContribution.contribution?.toString() || '0',
               }}
             />
+            <WorkedFor companies={personal.workedFor} />
           </>
         )}
       </div>

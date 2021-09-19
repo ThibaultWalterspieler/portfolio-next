@@ -6,6 +6,7 @@ $font-size--base: 10px;
 $font-size--section-title: 2rem;
 $font-size--h1-title: 10rem;
 $font-size--h2-title: 8rem;
+$font-size--h3-title: 3rem;
 $font-size--section: 5rem;
 $font-size--p-normal: 3.5rem;
 
@@ -31,6 +32,12 @@ $line-height--section: 6rem;
   font-weight: $font-weight--light;
   font-size: $font-size--h2-title;
   line-height: $line-height--h1-title;
+}
+
+%section-title {
+  font-family: $font-family;
+  font-weight: $font-weight--light;
+  font-size: $font-size--h3-title;
 }
 
 %section-text {
