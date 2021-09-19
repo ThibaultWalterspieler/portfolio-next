@@ -27,7 +27,7 @@ const DescriptionText: FC<{
   return (
     <>
       <div
-        className='description-wrapper'
+        className='description__wrapper'
         dangerouslySetInnerHTML={{ __html: sanitize(description) }}
       ></div>
     </>

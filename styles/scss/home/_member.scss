@@ -4,8 +4,8 @@
   @extend %section-text;
 
   @include respond-to(sm) {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 10rem;
+    line-height: 15rem;
   }
 
   & > .memberOf-wrapper {

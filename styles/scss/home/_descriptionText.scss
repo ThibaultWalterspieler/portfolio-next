@@ -1,8 +1,10 @@
-.description-wrapper {
-  width: 80%;
+.description__wrapper {
   & > p {
     color: map-get($colors, 'pureWhite');
 
     @extend %normal-text;
+    @include respond-to(sm) {
+      font-size: 9rem;
+    }
   }
 }

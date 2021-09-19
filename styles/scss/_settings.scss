@@ -1,8 +1,10 @@
 // -- Fonts 🖨 --
-$font-family: 'Butler', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', 'serif';
+$font-family: 'ivypresto-display', 'serif', 'Roboto', 'Open Sans', 'Helvetica',
+  'Arial', 'serif';
 
 // -- Text 🆎 --
 $font-size--base: 10px;
+
 $font-size--section-title: 2rem;
 $font-size--h1-title: 10rem;
 $font-size--h2-title: 8rem;
@@ -12,7 +14,7 @@ $font-size--p-normal: 3.5rem;
 
 $font-weight--light: 300;
 $font-weight--regular: 400;
-$font-weight--semibold: 500;
+$font-weight--semibold: 600;
 $font-weight--bold: 700;
 
 // Line height
@@ -84,59 +86,3 @@ $text--dark: map-get($colors, 'pureWhite');
 $text--green: map-get($colors, 'spotifyGreen');
 
 ///////////////
-
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler-UltraLight.woff2') format('woff2'),
-    url('/fonts/Butler-UltraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler-Medium.woff2') format('woff2'),
-    url('/fonts/Butler-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler-Light.woff2') format('woff2'),
-    url('/fonts/Butler-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler-Black.woff2') format('woff2'),
-    url('/fonts/Butler-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler-Bold.woff2') format('woff2'),
-    url('/fonts/Butler-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler-ExtraBold.woff2') format('woff2'),
-    url('/fonts/Butler-ExtraBold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler.woff2') format('woff2'),
-    url('/fonts/Butler.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
