@@ -1,5 +1,7 @@
+const { withPlausibleProxy } = require('next-plausible');
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+module.exports = withPlausibleProxy()({
   reactStrictMode: true,
   images: {
     domains: ['media.graphcms.com'],
@@ -12,4 +14,4 @@ module.exports = {
 
     return config;
   },
-};
+});
