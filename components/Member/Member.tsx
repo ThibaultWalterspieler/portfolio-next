@@ -2,7 +2,6 @@ import { FC } from 'react';
 import { Company } from '../../interface/company/company.interface';
 
 const Member: FC<{ companies: Company[] }> = ({ companies }) => {
-  console.log(companies);
   return (
     <div className='job-wrapper'>
       <h3>

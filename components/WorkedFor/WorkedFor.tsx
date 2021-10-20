@@ -3,7 +3,6 @@ import { Company } from '../../interface/company/company.interface';
 import SVGRender from '../SVG/SVGRender';
 
 const WorkedFor: FC<{ companies: Company[] }> = ({ companies }) => {
-  console.log(companies);
   return (
     <div className={'worked-for__wrapper'}>
       <h3>Worked for :</h3>
